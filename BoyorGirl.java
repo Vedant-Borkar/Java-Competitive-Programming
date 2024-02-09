@@ -1,4 +1,4 @@
-package PUSH;
+
 import java.util.*;
 public class BoyorGirl {
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package PUSH;
 import java.util.*;
 public class BeautifulMatrix
 {

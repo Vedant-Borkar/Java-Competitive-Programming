@@ -1,4 +1,3 @@
-package PUSH;
 import java.util.*;
 class AbhishekBill{
     public static void main(String[] args) {
