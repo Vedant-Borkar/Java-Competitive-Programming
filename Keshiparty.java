@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/contest/1610/problem/C
+ * Name:Keshi Party
  */
 import java.util.*;
 import java.io.*;
-public class AMYTEMPLATE{
+public class Keshiparty{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -401,8 +401,41 @@ public class AMYTEMPLATE{
         }
         System.out.println();
     }
+    //BINARY SEARCH
+    static int Binary2D(int mid,int[][] ar,int a){
+        int ans = -1; // Initialize ans to -1, indicating not found
+        int low = 0;
+        int high = ar.length * ar[0].length - 1; // Total number of elements in the 2D array
+        while (low <= high) {
+            int midValue = ar[mid / ar[0].length][mid % ar[0].length]; // Calculate the value at mid index
+            if (midValue == a) {
+                ans = mid; // Set ans to mid index if value is found
+                break;
+            } else if (midValue < a) {
+                low = mid + 1; // Update low if value at mid is less than 'a'
+            } else {
+                high = mid - 1; // Update high if value at mid is greater than 'a'
+            }
+            mid = (low + high) / 2; // Recalculate mid
+        }
+        return ans;
+    }
 
-
+    int Binary(int mid, int[] ar, int a) {
+        int low = 0;
+        int high = ar.length - 1;
+        while (low <= high) {
+            mid = low + (high - low) / 2;
+            if (ar[mid] == a)
+                return mid;
+            else if (ar[mid] < a)
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+        return -1; // If element is not present in array
+    }
+    
     //STRING MANIPULATION
     //Reverse a char array
     public static String rev(char s[]) {
@@ -516,13 +549,39 @@ public class AMYTEMPLATE{
         }
     }
     //Here's what u want :)
+    public static boolean f(int mid, int[][] a, int n){
+        int cnt = 0;
+        for (int i=0; i<n; i++){
+            int r=a[i][0], l=a[i][1];
+            if (l >= cnt && mid - 1 - cnt <= r){
+                cnt++;
+            }
+        }
+        return cnt>=mid;
+    }
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
         int i,j,count=0,n,t;
         ArrayList<Integer> list=new ArrayList<>();
         t=sc.nextInt();
         while(t-->0){
-            
+            n = sc.nextInt();
+            int[][] a = new int[n][2];
+            for (i=0; i<n; i++){
+                a[i][0]=sc.nextInt();
+                a[i][1]=sc.nextInt();
+            }
+            int l=0, r=n, ans=0;
+            while(l<=r){
+                int mid = (l+r)/2;
+                if (f(mid,a,n)){
+                    ans=mid;
+                    l=mid+1;
+                }else {
+                    r=mid-1;
+                }
+            }
+            print(ans);
         }
     }
 }
