@@ -17,5 +17,7 @@ public class DislikesofThree {
 
         for(i=0;i<t;i++)
             System.out.println(arr[arr1[i]-1]);
+        
+        sc.close();
     }
 }
