@@ -39,6 +39,7 @@ public class DoNotBeDistracted {
 
             count=0;j=0;
         }
+        sc.close();
     }
 }
 /**for(i=0;i<n; i++)
