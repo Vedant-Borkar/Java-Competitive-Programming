@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/problemset/problem/1512/A
+ * Name:A. Spy Detected!
  */
 import java.util.*;
 import java.io.*;
-public class AMYTEMPLATE{
+public class SpyDetect{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -523,9 +523,15 @@ public class AMYTEMPLATE{
         t=sc.nextInt();
         while(t-->0){
             int n=sc.nextInt();
-
-            res.append("\n");
+            int arr[]=sc.readintarray(n);
+            int v[]=arr;
+            ruffleSort(arr);
+            for (i = 0; i < n; i++) {
+              if (v[i] != arr[1]) {
+                  System.out.println(i+1);
+              }
+          }
         }
-        print(res);
+        //print(res);
     }
 }

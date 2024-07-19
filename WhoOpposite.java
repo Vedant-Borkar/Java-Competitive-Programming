@@ -5,7 +5,7 @@
  */
 import java.util.*;
 import java.io.*;
-public class AMYTEMPLATE{
+public class WhoOpposite{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -518,14 +518,11 @@ public class AMYTEMPLATE{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
-        int i,j,count=0,t;
+        int i,j,count=0,n,t;
         ArrayList<Integer> list=new ArrayList<>();
         t=sc.nextInt();
         while(t-->0){
-            int n=sc.nextInt();
-
-            res.append("\n");
+            
         }
-        print(res);
     }
 }

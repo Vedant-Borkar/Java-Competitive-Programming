@@ -5,7 +5,7 @@
  */
 import java.util.*;
 import java.io.*;
-public class AMYTEMPLATE{
+public class DualTrigger{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -518,13 +518,19 @@ public class AMYTEMPLATE{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
-        int i,j,count=0,t;
+        int i,j,count=0,n,t;
         ArrayList<Integer> list=new ArrayList<>();
         t=sc.nextInt();
         while(t-->0){
-            int n=sc.nextInt();
-
-            res.append("\n");
+            n=sc.nextInt();
+            String s=sc.next();
+            count=0;
+            for(i=0;i<s.length();i++){
+                if(s.charAt(i)=='1') count++;
+            }
+            if(count%2==0 && s.length()%2==0) res.append("YES\n");
+            else if(s.length()%2!=0 && count%2!=0 && s.length()>1 ) res.append("YES\n");
+            else res.append("NO\n");
         }
         print(res);
     }

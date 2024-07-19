@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/problemset/problem/1560/B
+ * Name:Who Opposite
  */
 import java.util.*;
 import java.io.*;
-public class AMYTEMPLATE{
+public class WhoOpposit{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -522,8 +522,15 @@ public class AMYTEMPLATE{
         ArrayList<Integer> list=new ArrayList<>();
         t=sc.nextInt();
         while(t-->0){
-            int n=sc.nextInt();
-
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            int c=sc.nextInt();int n=2*Math.abs(a-b);
+            int d= n/2 +c;
+            if(a>n || b>n || c>n) res.append("-1");
+            else{
+                if(d>n) d-=n;
+                res.append(d);
+            }
             res.append("\n");
         }
         print(res);
