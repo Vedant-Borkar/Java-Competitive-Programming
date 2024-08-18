@@ -3,7 +3,7 @@
  * Problem:https://codeforces.com/contest/2000/problem/A
  * Name:A. Primary Task
  */
-import java.util.Scanner;
+import java.util.*;
 public class PrimaryTask{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
