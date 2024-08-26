@@ -1,3 +1,8 @@
+/**
+ * Author: Vedant_Borkar
+ * Problem:https://codeforces.com/contest/2001/problem/C
+ * Name:C Problem
+ */
 #include <iostream>
 #include <vector>
 #include <unordered_map>
