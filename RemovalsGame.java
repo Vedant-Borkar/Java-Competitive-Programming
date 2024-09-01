@@ -4,7 +4,6 @@
  * Name: B. Removals Game
  */
 import java.util.*;
-
 public class RemovalsGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,14 +19,11 @@ public class RemovalsGame {
                 System.out.println("Bob");
                 continue;
             }
-
             Collections.reverse(a);
-
             if (a.equals(b)) {
                 System.out.println("Bob");
                 continue;
             }
-
             System.out.println("Alice");
         }
     }
