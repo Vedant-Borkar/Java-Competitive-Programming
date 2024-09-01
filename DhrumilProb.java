@@ -40,8 +40,7 @@ public class DhrumilProb{
       int maxind=-1;
       for(int i=0;i<n;i++){
         if(pts[i]>maxPoints){ maxind=i; maxPoints=pts[i];}//Find the winner
-      }
-      System.out.println(pts[maxind] + " " + drivers[maxind]);//Final output
+      }System.out.println(pts[maxind] + " " + drivers[maxind]);//Final output
   }
 }
 }
