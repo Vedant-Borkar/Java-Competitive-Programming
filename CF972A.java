@@ -6,7 +6,7 @@
 import java.io.*;
 import java.util.*;
 
-public class TEMPLATE {
+public class CF972A {
 
     static class FastReader {
         BufferedReader br;
@@ -80,12 +80,14 @@ public class TEMPLATE {
 
     public void ans() {
         int n=sc.nextInt();
-        
+        long[] arr=new long[n];
+        inArr(arr);
+        pArr(arr);
     }
 
     public void solve() {
         int t = sc.nextInt();
-//        int t = 1;
+ //        int t = 1;
         while(t-- > 0){
             ans();
         }
