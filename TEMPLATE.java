@@ -23,6 +23,7 @@ public class TEMPLATE {
     void inArr(int[] a){for(int i=0;i<a.length;i++){a[i]=sc.nextInt();}}
     void inArr(long[] a){for(int i=0;i<a.length;i++){a[i]=sc.nextLong();}}
     void inArr(String[] a){for(int i=0;i<a.length;i++){a[i]=sc.next();}}
+    void inArr(ArrayList<Integer> a){for(int i=0;i<a.size();i++){a.set(i, sc.nextInt());}}
     void pArr(int[] a){for(int i=0; i<a.length;i++){out.print(a[i]+" ");}}
     void pArr(long[] a){for(int i=0; i<a.length;i++){out.print(a[i]+" ");}}
     void pArr(String[] a){for(int i=0; i<a.length;i++){out.print(a[i]+" ");}}
@@ -79,6 +80,10 @@ public class TEMPLATE {
 
     public void ans() {
         int n=sc.nextInt();
+        long[] arr=new long[n];
+        inArr(arr);
+        sort(arr);
+        pArr(arr);
     }
 
     public void solve() {
