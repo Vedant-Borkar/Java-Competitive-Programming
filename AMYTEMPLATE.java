@@ -123,19 +123,7 @@ public class AMYTEMPLATE{
     }
     // Precise Integer square root
     // Math.sqrt doesnt work precisely for big numbers :(
-    public static long sqrt(long x) {
-        long start = 0, end = (long) 3e9, ans = 1;
-        while (start <= end) {
-            long mid = (start + end) / 2;
-            if (mid * mid <= x) {
-                ans = mid;
-                start = mid + 1;
-            } else
-                end = mid - 1;
-        }
-        return ans;
-    }
-
+    public static long sqrt(long x) {long start = 0, end = (long) 3e9, ans = 1;while (start <= end) { long mid = (start + end) / 2; if (mid * mid <= x) {ans = mid;start = mid + 1;} else end = mid - 1;}return ans;}
     // POWER CALCULATION IN SHORTER TIME
     public static long pow(long a, long b) {
         a %= mod;

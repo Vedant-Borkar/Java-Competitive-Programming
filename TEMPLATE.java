@@ -80,7 +80,7 @@ public class TEMPLATE {
 
     public void ans() {
         int n=sc.nextInt();
-        
+        pl(n);
     }
 
     public void solve() {
