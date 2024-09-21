@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:https://codeforces.com/problemset/problem/1901/A
- * Name:A. Line Trip
+ * Problem:https://codeforces.com/problemset/problem/1900/A
+ * Name:A. Cover in Water
  */
 import java.util.*;
 import java.io.*;
-public class LineTrip{
+public class CoverWater{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -66,9 +66,7 @@ public class LineTrip{
     static void ruffleSort(int[] a) {int n = a.length;for (int i = 0; i < n; i++) {int oi = random.nextInt(n), temp = a[oi];a[oi] = a[i];a[i] = temp;}Arrays.sort(a);}
     // Sort 1-D LONG type array
     public static void sort(long a[]) {divide(a, 0, a.length - 1);}
-
     public static void divide(long a[], int l, int r) {if (l < r) {int m = l + (r - l) / 2;divide(a, l, m);divide(a, m + 1, r);merge(a, l, m, r);}}
-
     public static void merge(long a[], int l, int m, int r) {int n1 = m - l + 1;int n2 = r - m;long L[] = new long[n1];long R[] = new long[n2];for (int i = 0; i < n1; ++i) {L[i] = a[l + i];}for (int j = 0; j < n2; ++j) {R[j] = a[m + 1 + j];}int i = 0, j = 0;int k = l;while (i < n1 && j < n2) {if (L[i] <= R[j]) {a[k] = L[i];i++;} else {a[k] = R[j];j++;}k++;}while (i < n1) {a[k] = L[i];i++;k++;}while (j < n2) {a[k] = R[j];j++;k++;}}
     // Sort 1-D LONG type array in descending order
     public static void rsort(long a[]) {rdivide(a, 0, a.length - 1);}
@@ -131,14 +129,11 @@ public class LineTrip{
         //int t=1;
         while(t-->0){
             int n= sc.nextInt();
-            int x=sc.nextInt();
-            int arr[]= sc.readintarray(n);
-            int max=arr[0];
-            for(int i=1;i<n;i++){
-                max= Math.max(arr[i]-arr[i-1],max);
-            }
-            if(x>arr[n-1])   max=max( 2*(x-arr[n-1]),max);
-            res.append(max);
+            String s= sc.next();
+            int count=0,i=0;
+            if (s.contains("...")) count=2;//'...' exists then u will just keep replacing water
+            else count=(int) s.chars().filter(ch -> ch == '.').count();// else u place water repeatedly
+            res.append(count);
             res.append("\n");
         }
         print(res);
