@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:A. Consecutive Sum Riddle
+ * Name:https://codeforces.com/contest/1594/problem/A
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class SumRiddle{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -128,10 +128,10 @@ public class ATEMPLATE{
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
         int t=sc.nextInt();
-        //int t=1;
         while(t-->0){
-            int n= sc.nextInt();
-
+            long n= sc.nextLong();
+            res.append(-(n-1) +" ");
+            res.append(n);
             res.append("\n");
         }
         print(res);

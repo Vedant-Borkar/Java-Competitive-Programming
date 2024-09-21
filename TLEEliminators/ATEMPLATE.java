@@ -125,13 +125,14 @@ public class ATEMPLATE{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
+        int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        int t=sc.nextInt();
-        //int t=1;
+        //int t=sc.nextInt();
+        int t=1;
         while(t-->0){
             int n= sc.nextInt();
-
+            res.append(n);
             res.append("\n");
         }
         print(res);

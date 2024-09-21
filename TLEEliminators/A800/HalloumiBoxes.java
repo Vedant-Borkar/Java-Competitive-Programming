@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:A. Halloumi Boxes
+ * Name:https://codeforces.com/problemset/problem/1903/A
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class HalloumiBoxes{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -66,9 +66,7 @@ public class ATEMPLATE{
     static void ruffleSort(int[] a) {int n = a.length;for (int i = 0; i < n; i++) {int oi = random.nextInt(n), temp = a[oi];a[oi] = a[i];a[i] = temp;}Arrays.sort(a);}
     // Sort 1-D LONG type array
     public static void sort(long a[]) {divide(a, 0, a.length - 1);}
-
     public static void divide(long a[], int l, int r) {if (l < r) {int m = l + (r - l) / 2;divide(a, l, m);divide(a, m + 1, r);merge(a, l, m, r);}}
-
     public static void merge(long a[], int l, int m, int r) {int n1 = m - l + 1;int n2 = r - m;long L[] = new long[n1];long R[] = new long[n2];for (int i = 0; i < n1; ++i) {L[i] = a[l + i];}for (int j = 0; j < n2; ++j) {R[j] = a[m + 1 + j];}int i = 0, j = 0;int k = l;while (i < n1 && j < n2) {if (L[i] <= R[j]) {a[k] = L[i];i++;} else {a[k] = R[j];j++;}k++;}while (i < n1) {a[k] = L[i];i++;k++;}while (j < n2) {a[k] = R[j];j++;k++;}}
     // Sort 1-D LONG type array in descending order
     public static void rsort(long a[]) {rdivide(a, 0, a.length - 1);}
@@ -131,9 +129,21 @@ public class ATEMPLATE{
         //int t=1;
         while(t-->0){
             int n= sc.nextInt();
-
+            int k=sc.nextInt();
+            int arr[]= sc.readintarray(n);
+            int arr1[]=new int[n];
+            for(int i=0;i<n;i++) arr1[i]=arr[i];
+            ruffleSort(arr1);
+            if(k>1 || isSorted(arr,arr1)) res.append("YES");
+            else res.append("NO");
             res.append("\n");
         }
         print(res);
+    }
+    public static boolean isSorted(int[] arr,int[] arr1){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]!=arr1[i]) return false;
+        }
+        return true;
     }
 }

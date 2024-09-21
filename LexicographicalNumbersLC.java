@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://leetcode.com/problems/lexicographical-numbers/description/?envType=daily-question&envId=2024-09-21
+ * Name:386. Lexicographical Numbers
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class LexicographicalNumbersLC{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -117,6 +117,8 @@ public class ATEMPLATE{
         int[] readintarray(int n) {int res[] = new int[n];for (int i = 0; i < n; i++) res[i] = nextInt();return res;}
         //INPUT INT ARRAYLIST
         ArrayList<Integer> readlist(int n) {ArrayList<Integer> list = new ArrayList<>();for (int i = 0; i < n; i++) {int a = nextInt();list.add(a);}return list;}
+        //INPUT STRING ARRAYLIST
+        ArrayList<String> readStringList(int n) {ArrayList<String> list = new ArrayList<>();for (int i = 0; i < n; i++) {list.add(next());}return list;}
         //INPUT LONG ARRAY
         long[] readlongarray(int n) {long res[] = new long[n];for (int i = 0; i < n; i++) res[i] = nextLong();return res;}
         //INPUT STRING return char array
@@ -125,14 +127,24 @@ public class ATEMPLATE{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
-        ArrayList<Integer> list=new ArrayList<>();
+        //ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        int t=sc.nextInt();
-        //int t=1;
+        //int t=sc.nextInt();
+        int t=1;
         while(t-->0){
             int n= sc.nextInt();
-
-            res.append("\n");
+            int arr[]=new int[n];
+            for(int i=1;i<=n;i++)arr[i-1]=i;
+            //arrprint(arr);
+            ArrayList<String> l=new ArrayList<>();
+            for(int i=0;i<n;i++) l.add(Integer.toString(arr[i]));
+            Collections.sort(l);
+            ArrayList<Integer> intList = new ArrayList<>();
+            for (String str : l) {
+                intList.add(Integer.parseInt(str));
+            }
+            for(int i=0;i<n;i++) {res.append(intList.get(i));
+            res.append(" ");}
         }
         print(res);
     }
