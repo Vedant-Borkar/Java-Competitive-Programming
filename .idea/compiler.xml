@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/GCDLCM.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/ColorBallProblem.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/ColorBallproblemFinal.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/DaytonaCost.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/DislikesofThree.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/DoNotBeDistracted.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/EvenOdds.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/FairPlayoff.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/FindOdds.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/GoodKid.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/GreatestConvex.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/HelpfulMaths.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/JagjeetBitwise_v1.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/JagjeetBitwise_v2.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/JagjeetBit_alternate.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/JellyfishandUndertale.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/Juicy.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/Jumping.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/JumpingFinal.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/Kristinaburles.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/LittleGirl.java" />
+      <file url="file://$PROJECT_DIR$/PUSH/LuckyNumbers.java" />
+      <file url="file://$PROJECT_DIR$/TLE Eliminators/ATEMPLATE.java" />
+      <file url="file://$PROJECT_DIR$/TurtlePiggyGame.java" />
+      <file url="file://$PROJECT_DIR$/TLEEliminators/ATEMPLATE.java" />
+    </excludeFromCompile>
+  </component>
+</project>
