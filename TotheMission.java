@@ -10,6 +10,7 @@ class TotheMission {
             int len=Math.min(n,m);int i,j,temp,maxwatt=0;
             int arrn[]=new int[n];
             int arrm[]=new int[m];
+            
             for(i=0;i<n;i++)
                 arrn[i]= sc.nextInt();
 
