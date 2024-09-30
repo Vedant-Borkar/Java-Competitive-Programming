@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/problemset/problem/1862/B
+ * Name:B. Sequence Game
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class SequenceGame{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -126,13 +126,26 @@ public class ATEMPLATE{
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
-        ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        //int t=sc.nextInt();
-        int t=1;
+        int t=sc.nextInt();
+        //int t=1;
         while(t-->0){
+            ArrayList<Integer> list=new ArrayList<>();
             int n= sc.nextInt();
-            res.append(n);
+            int j=0;
+            for(int i=0;i<n;i++){
+                int x=sc.nextInt();
+                if(i==0) {list.add(x);j=i;}
+                else{
+                    if(list.get(j)>x){
+                        list.add(1);
+                        list.add(x);j+=2;
+                    }
+                    else{ list.add(x);j++;}
+                }
+            }
+            res.append(list.size()+"\n");
+            for(int i:list) res.append(i+" ");
             res.append("\n");
         }
         print(res);

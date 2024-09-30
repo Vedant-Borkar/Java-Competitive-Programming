@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/contest/2020/problem/A
+ * Name:A. Find Minimum Operations
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class MinOperations{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -128,11 +128,22 @@ public class ATEMPLATE{
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        //int t=sc.nextInt();
-        int t=1;
+        int t=sc.nextInt();
+        //int t=1;
         while(t-->0){
-            int n= sc.nextInt();
-            res.append(n);
+            long count=0;
+            long n= sc.nextLong();
+            long k= sc.nextLong();
+            if(n<k || k==1 ){
+                res.append(n);
+
+            }else{
+                while (n > 0) {
+                    count += n % k;
+                    n = n / k;
+                }
+                res.append(count);
+            }
             res.append("\n");
         }
         print(res);

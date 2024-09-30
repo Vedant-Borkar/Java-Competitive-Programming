@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/gym/105380/problem/B1
+ * Name:B1. Xor Pairs (Easy Version)
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class XorPairEasy{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -128,11 +128,19 @@ public class ATEMPLATE{
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        //int t=sc.nextInt();
-        int t=1;
+        int t=sc.nextInt();
+        //int t=1;
         while(t-->0){
             int n= sc.nextInt();
-            res.append(n);
+            long arr[]=new long[n];
+            int zeroCount=0,nonzeroCount=0;
+            for(int i=0;i<n;i++) {
+                arr[i] = sc.nextLong();
+                if (arr[i] == 0) zeroCount++;
+                nonzeroCount++;
+            }
+            long result= zeroCount*nonzeroCount;
+            res.append(result);
             res.append("\n");
         }
         print(res);

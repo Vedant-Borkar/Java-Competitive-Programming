@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/problemset/problem/1837/A
+ * Name:A. Grasshopper on a Line
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class GrasshopperLine{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -128,11 +128,17 @@ public class ATEMPLATE{
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        //int t=sc.nextInt();
-        int t=1;
+        int t=sc.nextInt();
+        //int t=1;
         while(t-->0){
-            int n= sc.nextInt();
-            res.append(n);
+            int x= sc.nextInt();
+            int k= sc.nextInt();
+            if(x%k!=0){
+                res.append(1+"\n"+x);
+            }else{
+                res.append(2+"\n");
+                res.append(x-1+" "+1);
+            }
             res.append("\n");
         }
         print(res);

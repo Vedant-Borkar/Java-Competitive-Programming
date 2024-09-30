@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/gym/105380/problem/A
+ * Name:https://codeforces.com/gym/105380/problem/A
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class HatesAbhishek{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -125,15 +125,25 @@ public class ATEMPLATE{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
-        //int i,j,count=0;
+//        int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
         //int t=sc.nextInt();
         int t=1;
         while(t-->0){
             int n= sc.nextInt();
-            res.append(n);
-            res.append("\n");
+            int arr[]=new int[n];
+            for(int i=1;i<=n;i++)arr[i-1]=i;
+            if(n%2!=0) res.append("-1");
+            else{
+                for(int i=0;i<n-1;i++){
+                   int temp=arr[i];
+                   arr[i]=arr[i+1];
+                   arr[i+1]=temp;
+                   i++;
+                }
+                for(int i: arr) res.append(i+" ");
+            }
         }
         print(res);
     }
