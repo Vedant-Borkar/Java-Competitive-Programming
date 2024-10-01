@@ -122,18 +122,21 @@ public class ATEMPLATE{
         //INPUT STRING return char array
         char[] readchararray() {String str = sc.nextLine();return str.toCharArray();}
     }
+    //YES AND NO FUNCTION
+    public static void yes(){ System.out.println("YES");}
+    public static void no(){ System.out.println("NO");}
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        //int t=sc.nextInt();
-        int t=1;
+        int t=sc.nextInt();
+        //int t=1;
         while(t-->0){
             int n= sc.nextInt();
             res.append(n);
-            res.append("\n");
+           // res.append("\n");
         }
         print(res);
     }

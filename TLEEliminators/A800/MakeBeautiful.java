@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:https://codeforces.com/problemset/problem/1904/A
- * Name:A. Forked!
+ * Problem:https://codeforces.com/problemset/problem/1783/A
+ * Name:A. Make it Beautiful
  */
 import java.util.*;
 import java.io.*;
-public class Forked{
+public class MakeBeautiful{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -122,6 +122,9 @@ public class Forked{
         //INPUT STRING return char array
         char[] readchararray() {String str = sc.nextLine();return str.toCharArray();}
     }
+    //YES AND NO FUNCTION
+    public static void yes(){ System.out.println("YES");}
+    public static void no(){ System.out.println("NO");}
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         StringBuilder res = new StringBuilder();
@@ -130,32 +133,17 @@ public class Forked{
         //Stringmap map pq pqmax pqlong list longlist are defined above
         int t=sc.nextInt();
         //int t=1;
-        while(t-->0){
-            int a= sc.nextInt();
-            int b= sc.nextInt();
-            int x1= sc.nextInt();
-            int y1= sc.nextInt();
-            int x2= sc.nextInt();
-            int y2= sc.nextInt();
-
-            int ans=0;
-            int[] dx= {-1, 1, -1, 1};int[] dy= {-1, -1, 1, 1};
-            HashSet<ArrayList<Integer>> st1 = new HashSet<>();
-            HashSet<ArrayList<Integer>> st2 = new HashSet<>();
-
-            for (int j = 0; j < 4; j++) {
-                st1.add(new ArrayList<>(Arrays.asList(x1 + dx[j] * a, y1 + dy[j] * b)));
-                st1.add(new ArrayList<>(Arrays.asList(x1 + dx[j] * b, y1 + dy[j] * a)));
-
-                st2.add(new ArrayList<>(Arrays.asList(x2 + dx[j] * a, y2 + dy[j] * b)));
-                st2.add(new ArrayList<>(Arrays.asList(x2 + dx[j] * b, y2 + dy[j] * a)));
+        while(t-->0) {
+            int n = sc.nextInt();
+            int[] arr = sc.readintarray(n);
+            if (arr[0] == arr[n - 1]) {
+                no();
+            } else {
+                yes();
+                int temp=arr[1];arr[1]=arr[n-1];arr[n-1]=temp;
+                arrprint(arr);
             }
-            for(var x: st1){
-                if(st2.contains(x)) ans++;
-            }
-            res.append(ans);
-            res.append("\n");
         }
-        print(res);
+        //print(res);
     }
 }
