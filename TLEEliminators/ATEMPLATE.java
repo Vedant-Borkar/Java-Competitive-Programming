@@ -130,7 +130,7 @@ public class ATEMPLATE{
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
-        //Stringmap map pq pqmax pqlong list longlist are defined above
+        //Stringmap map pq pqmax pqlong l   ist longlist are defined above
         int t=sc.nextInt();
         //int t=1;
         while(t-->0){
