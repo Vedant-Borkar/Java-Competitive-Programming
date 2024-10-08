@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:
- * Name:
+ * Problem:https://codeforces.com/problemset/problem/1875/A
+ * Name:A. Jellyfish and Undertale
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class JellyfishUnder{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -130,14 +130,20 @@ public class ATEMPLATE{
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
-        //Stringmap map pq pqmax pqlong l   ist longlist are defined above
+        //Stringmap map pq pqmax pqlong list longlist are defined above
         int t=sc.nextInt();
         //int t=1;
         while(t-->0){
+            long a= sc.nextLong();
+            long b= sc.nextLong();
             int n= sc.nextInt();
-            res.append(n);
-            // res.append("\n");
+            long ans=b;
+            for(int i=0;i<n;i++) {
+                long x=sc.nextLong();
+                ans += Math.min(x, a - 1);
+            }
+            print(ans);
         }
-        print(res);
+        //print(res);
     }
 }

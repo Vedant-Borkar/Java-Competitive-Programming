@@ -136,7 +136,7 @@ public class ATEMPLATE{
         while(t-->0){
             int n= sc.nextInt();
             res.append(n);
-           // res.append("\n");
+            // res.append("\n");
         }
         print(res);
     }
