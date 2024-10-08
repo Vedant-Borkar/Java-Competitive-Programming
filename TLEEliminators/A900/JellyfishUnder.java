@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:https://codeforces.com/problemset/problem/1883/B
- * Name:B. Chemistry
+ * Problem:
+ * Name:
  */
 import java.util.*;
 import java.io.*;
-public class Chemistry{
+public class ATEMPLATE{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
