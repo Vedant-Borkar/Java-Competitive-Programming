@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:https://codeforces.com/contest/1875/problem/B
- * Name:B. Jellyfish and Game
+ * Problem:https://codeforces.com/contest/2022/problem/B
+ * Name:B. Kar Salesman
  */
 import java.util.*;
 import java.io.*;
-public class JellyfishGame{
+public class Div978B{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out = new PrintWriter(System.out);
@@ -136,38 +136,15 @@ public class JellyfishGame{
         int t=sc.nextInt();
         //int t=1;
         while(t-->0){
-            int n = sc.nextInt();
-            int m = sc.nextInt();
-            int k = sc.nextInt() - 1; // Decrement k as in C++ code
-            int a[]=new int[n];
-            int b[]=new int[m];
-            for (int i = 0; i < n; i++) a[i] = sc.nextInt();
-            for (int i = 0; i < m; i++) b[i] = sc.nextInt();
+            int n= sc.nextInt();
+            int r= sc.nextInt();
+            int arr[]= sc.readintarray(n);
+            int r1[][]=new int[r][2];
 
-            int x = 0, y = 0;
-            for (int i = 1; i < n; i++) if (a[i] < a[x]) x = i;
-            for (int i = 1; i < m; i++) if (b[i] > b[y]) y = i;
 
-            if (b[y] > a[x]) {
-                int temp = a[x];
-                a[x] = b[y];
-                b[y] = temp;
-            }
-
-            if ((k & 1) == 1) {
-                x = 0;
-                y = 0;
-                for (int i = 1; i < n; i++) if (a[i] > a[x]) x = i;
-                for (int i = 1; i < m; i++) if (b[i] < b[y]) y = i;
-                int temp = a[x];
-                a[x] = b[y];
-                b[y] = temp;
-            }
-
-            long ans = 0;
-            for (int i = 0; i < n; i++) ans += a[i];
-            print(ans);
+            res.append(n);
+            // res.append("\n");
         }
-       // print(res);
+        print(res);
     }
 }

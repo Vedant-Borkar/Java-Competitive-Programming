@@ -5,17 +5,17 @@
  */
 import java.util.*;
 import java.io.*;
-public class ATEMPLATE{
+public class Testing{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
-    static PrintWriter out = new PrintWriter(System.out);
-    static FastReader sc=new FastReader();
+    static PrintWriter out;
+    static FastReader sc;
     static final Random random=new Random();
     static long mod=1000000007L;
     static HashMap<String,Integer>Stringmap=new HashMap<>();
     static HashMap<Integer,Integer>map=new HashMap<>();
     static StringTokenizer st;
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static BufferedReader br;
     static ArrayList<Integer> list=new ArrayList<Integer>();
     static ArrayList<Long> longlist=new ArrayList<>();
     static String ins() {while (st == null || !st.hasMoreElements()) {try {st = new StringTokenizer(br.readLine());} catch (IOException e) {e.printStackTrace();}}return st.nextToken();}
@@ -75,7 +75,7 @@ public class ATEMPLATE{
     public static void rdivide(long a[], int l, int r) {if (l < r) {int m = l + (r - l) / 2;rdivide(a, l, m);rdivide(a, m + 1, r);rmerge(a, l, m, r);}}
     public static void rmerge(long a[], int l, int m, int r) {int n1 = m - l + 1;int n2 = r - m;long L[] = new long[n1];long R[] = new long[n2];for (int i = 0; i < n1; ++i) {L[i] = a[l + i];}for (int j = 0; j < n2; ++j) {R[j] = a[m + 1 + j];}int i = 0, j = 0;int k = l;while (i < n1 && j < n2) {if (L[i] >= R[j]) {a[k] = L[i];i++;} else {a[k] = R[j];j++;}k++;}while (i < n1) {a[k] = L[i];i++;k++;}while (j < n2) {a[k] = R[j];j++;k++;}}
     //PRINT ANYTHING FUNCTION
-    static < E > void print(E res) {System.out.println(res);}
+    static < E > void print(E res) {out.println(res);out.flush();}
     // Finding sum  and product of LONG TYPEarray elements
     public static long sum(long a[]) {long s = 0;for (int i = 0; i < a.length; i++) {s = (s + a[i]);}return s;}
     public static long mul(long a[]) {long s = 1;for (int i = 0; i < a.length; i++) {s = (s * a[i]);}return s;}
@@ -86,15 +86,17 @@ public class ATEMPLATE{
     public static int max(long a[]) {int in = 0;long m = a[0];for (int i = 1; i < a.length; i++) {if (a[i] > m) {m = a[i];in = i;}}return in;}
     // MIN IN ARRAY
     public static int min(long a[]) {int in = 0;long m = a[0];for (int i = 1; i < a.length; i++) {if (a[i] < m) {m = a[i];in = i;}}return in;}
+    public static long arrmax(long[] a) { return a.length == 0 ? Long.MIN_VALUE : java.util.Arrays.stream(a).max().getAsLong(); }
+    public static long arrmin(long[] a) { return a.length == 0 ? Long.MAX_VALUE : java.util.Arrays.stream(a).min().getAsLong(); }
     // ARRAY PRINTING
-    public static void arrprint(long a[]) {for (int i = 0; i < a.length; i++) {System.out.print(a[i] + " ");}System.out.println();}
-    public static void arrprint(double a[]) {for (int i = 0; i < a.length; i++) {System.out.print(a[i] + " ");}System.out.println();}
-    public static void arrprint(int a[]) {for (int i = 0; i < a.length; i++) {System.out.print(a[i] + " ");}System.out.println();}
-    public static void arrprint(char a[]) {for (int i = 0; i < a.length; i++) {System.out.print(a[i]);}System.out.println();}
+    public static void arrprint(long a[]) {for (int i = 0; i < a.length; i++) {out.print(a[i] + " ");out.flush();}out.println();out.flush();}
+    public static void arrprint(double a[]) {for (int i = 0; i < a.length; i++) {out.print(a[i] + " ");out.flush();}out.println();out.flush();}
+    public static void arrprint(int a[]) {for (int i = 0; i < a.length; i++) {out.print(a[i] + " ");out.flush();}out.println();out.flush();}
+    public static void arrprint(char a[]) {for (int i = 0; i < a.length; i++) {out.print(a[i]);out.flush();}out.println();out.flush();}
     //REVERSE ARRAY PRINTING
-    public static void revarrprint(long a[]) {for (int i = a.length - 1; i >= 0; i--) {System.out.print(a[i] + " ");}System.out.println();}
-    public static void revarrprint(int a[]) {for (int i = a.length - 1; i >= 0; i--) {System.out.print(a[i] + " ");}System.out.println();}
-    public static void revarrprint(double a[]) {for (int i = a.length - 1; i >= 0; i--) {System.out.print(a[i] + " ");}System.out.println();}
+    public static void revarrprint(long a[]) {for (int i = a.length - 1; i >= 0; i--) {out.print(a[i] + " ");}out.println();out.flush();}
+    public static void revarrprint(int a[]) {for (int i = a.length - 1; i >= 0; i--) {out.print(a[i] + " ");}out.println();out.flush();}
+    public static void revarrprint(double a[]) {for (int i = a.length - 1; i >= 0; i--) {out.print(a[i] + " ");}out.println();out.flush();}
     //STRING MANIPULATION
     //Reverse a char array
     public static String rev(char s[]) {int n = s.length;for (int i = 0; i < n / 2; i++) {char temp = s[i];s[i] = s[n - 1 - i];s[n - 1 - i] = temp;}return new String(s);}
@@ -107,7 +109,13 @@ public class ATEMPLATE{
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
-        public FastReader() {br = new BufferedReader(new InputStreamReader(System.in));}
+        public FastReader() {
+            try {
+                br = new BufferedReader(new FileReader("input.txt"));
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
         String next() {while (st == null || !st.hasMoreElements()) {try {st = new StringTokenizer(br.readLine());} catch (IOException e) {e.printStackTrace();}}return st.nextToken();}
         int nextInt() {return Integer.parseInt(next());}
         long nextLong() {return Long.parseLong(next());}
@@ -123,21 +131,22 @@ public class ATEMPLATE{
         char[] readchararray() {String str = sc.nextLine();return str.toCharArray();}
     }
     //YES AND NO FUNCTION
-    public static void yes(){ System.out.println("YES");}
-    public static void no(){ System.out.println("NO");}
+    public static void yes(){ out.println("YES");out.flush();}
+    public static void no(){ out.println("NO");out.flush();}
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
+        sc = new FastReader();
+        out = new PrintWriter(new FileWriter("output.txt", false));
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        int t=sc.nextInt();
-        //int t=1;
-        while(t-->0){
-            int n= sc.nextInt();
+        //int t = sc.nextInt();
+        int t=1;
+        while(t-->0) {
+            int n = sc.nextInt();
             res.append(n);
-           // res.append("\n");
         }
-        print(res);
+        //print(res);
     }
 }
