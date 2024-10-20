@@ -1,11 +1,11 @@
 /**
- * Author: Vedant_Borkar
- * Problem:https://codeforces.com/contest/2030/problem/A
- * Name:A. A Gift From Orangutan
+ * Author:Vedant_Borkar
+ * Problem:https://codeforces.com/gym/105435/problem/0
+ * Name:A. The world of JS (Jagjeet & Sagar)
  */
 import java.util.*;
 import java.io.*;
-public class Div2979A{
+public class mashA{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out;
@@ -138,15 +138,22 @@ public class Div2979A{
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
         int t = sc.nextInt();
-        //int t=1;
-        while(t-->0) {
-            int n = sc.nextInt();
-            long arr[]= sc.readlongarray(n);
-            long max=arrmax(arr);
-            long min=arrmin(arr);
-            res.append((n-1)*(max-min));
-            res.append("\n");
+        while (t-- > 0) {
+            long a = sc.nextLong(); // time when Sagar first gets busy
+            long b = sc.nextLong(); // interval between busy periods
+            long c = sc.nextLong(); // time when Jagjeet wants to play
+
+            boolean busy = false;
+            if (c >= a && c != a + 1) {
+                long timeSinceFirstBusy = c - a;
+                long remainder = timeSinceFirstBusy % b;
+                if (remainder == 0 || (remainder == 1 && timeSinceFirstBusy >= b)) {
+                    busy = true;
+                }
+            }
+            if(busy) yes();
+            else no();
         }
-        print(res);
+        //print(res);
     }
 }

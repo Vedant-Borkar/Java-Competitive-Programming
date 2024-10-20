@@ -1,11 +1,11 @@
 /**
- * Author: Vedant_Borkar
+ * Author:Vedant_Borkar
  * Problem:
  * Name:
  */
 import java.util.*;
 import java.io.*;
-public class Testing{
+public class ATEMPLATE{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out;
@@ -86,8 +86,8 @@ public class Testing{
     public static int max(long a[]) {int in = 0;long m = a[0];for (int i = 1; i < a.length; i++) {if (a[i] > m) {m = a[i];in = i;}}return in;}
     // MIN IN ARRAY
     public static int min(long a[]) {int in = 0;long m = a[0];for (int i = 1; i < a.length; i++) {if (a[i] < m) {m = a[i];in = i;}}return in;}
-    public static long arrmax(long[] a) { return a.length == 0 ? Long.MIN_VALUE : java.util.Arrays.stream(a).max().getAsLong(); }
-    public static long arrmin(long[] a) { return a.length == 0 ? Long.MAX_VALUE : java.util.Arrays.stream(a).min().getAsLong(); }
+    public static long arrmax(long[] a) { return a[max(a)];}
+    public static long arrmin(long[] a) { return a[min(a)];}
     // ARRAY PRINTING
     public static void arrprint(long a[]) {for (int i = 0; i < a.length; i++) {out.print(a[i] + " ");out.flush();}out.println();out.flush();}
     public static void arrprint(double a[]) {for (int i = 0; i < a.length; i++) {out.print(a[i] + " ");out.flush();}out.println();out.flush();}
@@ -110,11 +110,7 @@ public class Testing{
         BufferedReader br;
         StringTokenizer st;
         public FastReader() {
-            try {
-                br = new BufferedReader(new FileReader("input.txt"));
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
+            br = new BufferedReader(new InputStreamReader(System.in));
         }
         String next() {while (st == null || !st.hasMoreElements()) {try {st = new StringTokenizer(br.readLine());} catch (IOException e) {e.printStackTrace();}}return st.nextToken();}
         int nextInt() {return Integer.parseInt(next());}
@@ -136,17 +132,17 @@ public class Testing{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         sc = new FastReader();
-        out = new PrintWriter(new FileWriter("output.txt", false));
+        out = new PrintWriter(System.out);
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        //int t = sc.nextInt();
-        int t=1;
+        int t = sc.nextInt();
+        //int t=1;
         while(t-->0) {
             int n = sc.nextInt();
-            res.append(n);
+            res.append("\n");
         }
-        //print(res);
+        print(res);
     }
 }

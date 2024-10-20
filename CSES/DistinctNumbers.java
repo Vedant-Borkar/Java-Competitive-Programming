@@ -1,11 +1,11 @@
 /**
  * Author: Vedant_Borkar
- * Problem:https://codeforces.com/contest/2030/problem/A
- * Name:A. A Gift From Orangutan
+ * Problem:https://cses.fi/problemset/task/1621
+ * Name:Distinct Numbers
  */
 import java.util.*;
 import java.io.*;
-public class Div2979A{
+public class DistinctNumbers{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out;
@@ -137,14 +137,13 @@ public class Div2979A{
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
-        int t = sc.nextInt();
-        //int t=1;
+        //int t = sc.nextInt();
+        int t=1;
         while(t-->0) {
             int n = sc.nextInt();
-            long arr[]= sc.readlongarray(n);
-            long max=arrmax(arr);
-            long min=arrmin(arr);
-            res.append((n-1)*(max-min));
+            int arr[]= sc.readintarray(n);
+            for(int i: arr) map.put(i,map.getOrDefault(i,0)+1);
+            res.append(map.size());
             res.append("\n");
         }
         print(res);

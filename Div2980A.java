@@ -1,11 +1,11 @@
 /**
- * Author: Vedant_Borkar
- * Problem:https://codeforces.com/contest/2030/problem/A
- * Name:A. A Gift From Orangutan
+ * Author:Vedant_Borkar
+ * Problem:https://codeforces.com/contest/2024/problem/0
+ * Name:A. Profitable Interest Rate
  */
 import java.util.*;
 import java.io.*;
-public class Div2979A{
+public class Div2980A{
     // VEDANT_BORKAR's TEMPLATE:
     static long inf = (long) (1e18);
     static PrintWriter out;
@@ -138,13 +138,20 @@ public class Div2979A{
         ArrayList<Integer> list=new ArrayList<>();
         //Stringmap map pq pqmax pqlong list longlist are defined above
         int t = sc.nextInt();
-        //int t=1;
-        while(t-->0) {
-            int n = sc.nextInt();
-            long arr[]= sc.readlongarray(n);
-            long max=arrmax(arr);
-            long min=arrmin(arr);
-            res.append((n-1)*(max-min));
+
+        while (t-- > 0) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            if (a >= b) {
+                res.append(a);
+            } else {
+                int maxDeposit = 0;
+                if (2 * a > b) {
+                    maxDeposit = 2 * a - b;
+                }
+                res.append(maxDeposit);
+            }
             res.append("\n");
         }
         print(res);
