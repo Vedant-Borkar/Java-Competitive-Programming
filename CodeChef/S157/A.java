@@ -133,7 +133,7 @@ public class A{
     //Here's what u want :)
     public static void main(String args[]) throws IOException {
         sc = new FastReader();
-        out = new PrintWriter(System.out);
+        out = new PrintWriter(System.out) ;
         StringBuilder res = new StringBuilder();
         //int i,j,count=0;
         ArrayList<Integer> list=new ArrayList<>();
