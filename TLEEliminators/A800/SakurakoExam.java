@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/2008/A
- * Name:A. Sakurako's Exam
+ * Name:CodeChef.S157.A. Sakurako's Exam
  */
 import java.util.*;
 import java.io.*;

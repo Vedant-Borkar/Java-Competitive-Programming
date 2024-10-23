@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1875/A
- * Name:A. Jellyfish and Undertale
+ * Name:CodeChef.S157.A. Jellyfish and Undertale
  */
 import java.util.*;
 import java.io.*;

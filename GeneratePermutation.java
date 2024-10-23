@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2001/problem/B
- * Name:B. Generate Permutation
+ * Name:CodeChef.S157.B. Generate Permutation
  */
 import java.util.*;
 public class GeneratePermutation{

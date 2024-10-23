@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1837/A
- * Name:A. Grasshopper on a Line
+ * Name:CodeChef.S157.A. Grasshopper on a Line
  */
 import java.util.*;
 import java.io.*;

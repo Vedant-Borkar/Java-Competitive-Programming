@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1899/A
- * Name:A. Game with Integers
+ * Name:CodeChef.S157.A. Game with Integers
  */
 import java.util.*;
 import java.io.*;

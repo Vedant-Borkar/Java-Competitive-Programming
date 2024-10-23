@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem: https://codeforces.com/contest/2004/problem/A
- * Name:A. Closest Point 
+ * Name:CodeChef.S157.A. Closest Point
  */
 import java.io.*;
 import java.util.*;

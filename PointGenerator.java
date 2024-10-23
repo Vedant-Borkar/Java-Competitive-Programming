@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/1998/problem/A
- * Name:A. Find K Distinct Points with Fixed Center
+ * Name:CodeChef.S157.A. Find K Distinct Points with Fixed Center
  */
 import java.util.*;
 

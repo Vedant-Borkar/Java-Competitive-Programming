@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1896/A
- * Name:A. Jagged Swaps
+ * Name:CodeChef.S157.A. Jagged Swaps
  */
 import java.util.*;
 import java.io.*;

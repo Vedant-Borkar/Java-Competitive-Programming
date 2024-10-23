@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1877/A
- * Name:A. Goals of Victory
+ * Name:CodeChef.S157.A. Goals of Victory
  */
 import java.util.*;
 import java.io.*;

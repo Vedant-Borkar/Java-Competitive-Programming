@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2005/problem/A
- * Name:A. Simple Palindrome
+ * Name:CodeChef.S157.A. Simple Palindrome
  */
 import java.util.*;
 

@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2005/problem/B1
- * Name:B. Strict Teacher Easy
+ * Name:CodeChef.S157.B. Strict Teacher Easy
  */
 import java.util.*;
 

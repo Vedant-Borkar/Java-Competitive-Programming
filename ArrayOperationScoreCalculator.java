@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/1998/problem/C
- * Name:C. Perform Operations to Maximize Score
+ * Name:CodeChef.S157.C. Perform Operations to Maximize Score
  */
 import java.util.*;
 

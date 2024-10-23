@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/1859/problem/A
- * Name:A. United We Stand
+ * Name:CodeChef.S157.A. United We Stand
  */
 import java.util.*;
 import java.io.*;

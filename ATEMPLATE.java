@@ -62,13 +62,13 @@ public class ATEMPLATE{
     public static int Fact(int n) {int fact = 1;if (n == 0 || n == 1) {} else {for (int i = 1; i <= n; i++) fact = fact * i;}return fact;}
     // O(root n) Prime CHECK calculation
     public static boolean prime(long n) {for (long i = 2; i <= sqrt(n); i++) {if (n % i == 0) {return false;}}return true;}
-    //RUFFLE SORT 1-D INTEGER ARRAY
+    //RUFFLE SORT 1-CodeChef.S157.D INTEGER ARRAY
     static void ruffleSort(int[] a) {int n = a.length;for (int i = 0; i < n; i++) {int oi = random.nextInt(n), temp = a[oi];a[oi] = a[i];a[i] = temp;}Arrays.sort(a);}
-    // Sort 1-D LONG type array
+    // Sort 1-CodeChef.S157.D LONG type array
     public static void sort(long a[]) {divide(a, 0, a.length - 1);}
     public static void divide(long a[], int l, int r) {if (l < r) {int m = l + (r - l) / 2;divide(a, l, m);divide(a, m + 1, r);merge(a, l, m, r);}}
     public static void merge(long a[], int l, int m, int r) {int n1 = m - l + 1;int n2 = r - m;long L[] = new long[n1];long R[] = new long[n2];for (int i = 0; i < n1; ++i) {L[i] = a[l + i];}for (int j = 0; j < n2; ++j) {R[j] = a[m + 1 + j];}int i = 0, j = 0;int k = l;while (i < n1 && j < n2) {if (L[i] <= R[j]) {a[k] = L[i];i++;} else {a[k] = R[j];j++;}k++;}while (i < n1) {a[k] = L[i];i++;k++;}while (j < n2) {a[k] = R[j];j++;k++;}}
-    // Sort 1-D LONG type array in descending order
+    // Sort 1-CodeChef.S157.D LONG type array in descending order
     public static void rsort(long a[]) {rdivide(a, 0, a.length - 1);}
     public static void rdivide(long a[], int l, int r) {if (l < r) {int m = l + (r - l) / 2;rdivide(a, l, m);rdivide(a, m + 1, r);rmerge(a, l, m, r);}}
     public static void rmerge(long a[], int l, int m, int r) {int n1 = m - l + 1;int n2 = r - m;long L[] = new long[n1];long R[] = new long[n2];for (int i = 0; i < n1; ++i) {L[i] = a[l + i];}for (int j = 0; j < n2; ++j) {R[j] = a[m + 1 + j];}int i = 0, j = 0;int k = l;while (i < n1 && j < n2) {if (L[i] >= R[j]) {a[k] = L[i];i++;} else {a[k] = R[j];j++;}k++;}while (i < n1) {a[k] = L[i];i++;k++;}while (j < n2) {a[k] = R[j];j++;k++;}}

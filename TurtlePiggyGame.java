@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem: https://codeforces.com/contest/2003/problem/B
- * Name: B. Turtle and Piggy Are Playing a Game 2
+ * Name: CodeChef.S157.B. Turtle and Piggy Are Playing a Game 2
  */
 import java.util.*;
 

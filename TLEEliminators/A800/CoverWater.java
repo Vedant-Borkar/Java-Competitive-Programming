@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1900/A
- * Name:A. Cover in Water
+ * Name:CodeChef.S157.A. Cover in Water
  */
 import java.util.*;
 import java.io.*;

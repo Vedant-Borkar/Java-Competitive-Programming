@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/1997/problem/A
- * Name:A. Strong Password
+ * Name:CodeChef.S157.A. Strong Password
  */
 import java.util.*;
 import java.io.*;

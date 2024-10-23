@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1783/A
- * Name:A. Make it Beautiful
+ * Name:CodeChef.S157.A. Make it Beautiful
  */
 import java.util.*;
 import java.io.*;

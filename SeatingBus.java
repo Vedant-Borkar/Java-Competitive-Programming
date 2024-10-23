@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2000/problem/B
- * Name:B. Seating in a Bus
+ * Name:CodeChef.S157.B. Seating in a Bus
  */
 import java.util.*;
 class SeatingBus{

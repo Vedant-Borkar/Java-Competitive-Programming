@@ -178,7 +178,7 @@ public class DualTrigger{
         }
         return true;
     }
-    //RUFFLE SORT 1-D INTEGER ARRAY
+    //RUFFLE SORT 1-CodeChef.S157.D INTEGER ARRAY
     static void ruffleSort(int[] a) {
         int n=a.length;
         for (int i=0; i<n; i++) {
@@ -188,7 +188,7 @@ public class DualTrigger{
         Arrays.sort(a);
     }
 
-    // Sort 1-D LONG type array
+    // Sort 1-CodeChef.S157.D LONG type array
     public static void sort(long a[]) {
         divide(a, 0, a.length - 1);
     }
@@ -237,7 +237,7 @@ public class DualTrigger{
         }
     }
 
-    // Sort 1-D LONG type array in descending order
+    // Sort 1-CodeChef.S157.D LONG type array in descending order
     public static void rsort(long a[]) {
         rdivide(a, 0, a.length - 1);
     }

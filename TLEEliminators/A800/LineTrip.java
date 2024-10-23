@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1901/A
- * Name:A. Line Trip
+ * Name:CodeChef.S157.A. Line Trip
  */
 import java.util.*;
 import java.io.*;

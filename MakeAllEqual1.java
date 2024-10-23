@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2001/problem/A
- * Name:A. Make All Equal
+ * Name:CodeChef.S157.A. Make All Equal
  */
 import java.util.*;
 public class MakeAllEqual1{

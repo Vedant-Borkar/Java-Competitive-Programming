@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2003/problem/A
- * Name: A. Turtle and Good Strings
+ * Name: CodeChef.S157.A. Turtle and Good Strings
  */
 import java.io.*;
 import java.util.*;

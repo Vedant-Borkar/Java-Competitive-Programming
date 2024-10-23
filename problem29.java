@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/1998/problem/B
- * Name:B. Minimize Equal Sum Subarrays
+ * Name:CodeChef.S157.B. Minimize Equal Sum Subarrays
  */
 import java.util.*;
 

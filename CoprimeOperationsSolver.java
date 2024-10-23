@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem: https://codeforces.com/contest/514/problem/A
- * Name: A. Chewbaсca and Number
+ * Name: CodeChef.S157.A. Chewbaсca and Number
  */
 import java.io.BufferedReader;
 import java.io.IOException;

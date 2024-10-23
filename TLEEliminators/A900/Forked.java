@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1904/A
- * Name:A. Forked!
+ * Name:CodeChef.S157.A. Forked!
  */
 import java.util.*;
 import java.io.*;

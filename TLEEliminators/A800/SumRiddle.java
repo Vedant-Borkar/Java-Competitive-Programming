@@ -1,6 +1,6 @@
 /**
  * Author: Vedant_Borkar
- * Problem:A. Consecutive Sum Riddle
+ * Problem:CodeChef.S157.A. Consecutive Sum Riddle
  * Name:https://codeforces.com/contest/1594/problem/A
  */
 import java.util.*;

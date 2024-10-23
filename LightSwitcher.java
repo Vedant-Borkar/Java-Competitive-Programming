@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/1993/problem/C
- * Name:C. Light Switches
+ * Name:CodeChef.S157.C. Light Switches
  */
 import java.util.*;
 import java.io.*;

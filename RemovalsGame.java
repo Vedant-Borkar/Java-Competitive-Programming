@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem: https://codeforces.com/contest/2002/problem/B
- * Name: B. Removals Game
+ * Name: CodeChef.S157.B. Removals Game
  */
 import java.util.*;
 public class RemovalsGame {

@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1778/A
- * Name:A. Flip Flop Sum
+ * Name:CodeChef.S157.A. Flip Flop Sum
  */
 import java.util.*;
 import java.io.*;

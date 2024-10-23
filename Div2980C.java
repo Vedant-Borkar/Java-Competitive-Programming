@@ -1,7 +1,7 @@
 /**
  * Author:Vedant_Borkar
  * Problem:https://codeforces.com/contest/2024/problem/C
- * Name:C. Concatenation of Arrays
+ * Name:CodeChef.S157.C. Concatenation of Arrays
  */
 import java.util.*;
 import java.io.*;

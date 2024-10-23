@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/problemset/problem/1890/A
- * Name:A. Doremy's Paint 3
+ * Name:CodeChef.S157.A. Doremy's Paint 3
  */
 import java.util.*;
 import java.io.*;

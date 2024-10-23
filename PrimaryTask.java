@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2000/problem/A
- * Name:A. Primary Task
+ * Name:CodeChef.S157.A. Primary Task
  */
 import java.util.*;
 public class PrimaryTask{

@@ -1,7 +1,7 @@
 /**
  * Author: Vedant_Borkar
  * Problem:https://codeforces.com/contest/2020/problem/C
- * Name:C. Bitwise Balancing
+ * Name:CodeChef.S157.C. Bitwise Balancing
  */
 import java.io.*;
 import java.util.*;
